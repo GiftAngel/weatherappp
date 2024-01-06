@@ -16,4 +16,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD gunicorn Weather.wsgi
+CMD gunicorn weather.wsgi
