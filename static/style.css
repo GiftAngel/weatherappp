@@ -65,7 +65,7 @@ color:#04009A ; */
 }
 .btn:hover {
   transform: translateY(-3px);
-  background-color: rgb(5, 41, 51);
+  background-color: rgb(8, 197, 250);
   color: #fff;
 }
 .weather {
