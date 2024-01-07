@@ -24,12 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-83@(ryv+r@)&w+f0&fy7@7$t4i(q-572-by*kkzau+3&%4j%wr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
+#ALLOWED_HOSTS = [*]
 ALLOWED_HOSTS = ['weatherappp-production.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://weatherappp-production.up.railway.app/']
-CSRF_ALLOWED_ORIGINS = ['https://weatherappp-production.up.railway.app/']
-CORS_ORIGINS_WHITELIST = ['https://weatherappp-production.up.railway.app/']
+
 
 
 # Application definition
@@ -42,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app.apps.AppConfig',
-    'corsheaders',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -136,3 +135,11 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = ['weatherappp-production.up.railway.app']
+
+SESSION_COOKIE_SECURE = True
+
+CSRF_COOKIE_SECURE = True
