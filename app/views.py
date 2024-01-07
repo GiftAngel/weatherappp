@@ -2,8 +2,9 @@ from django.shortcuts import render
 from django.contrib import messages
 import requests
 import datetime
+from django.views.decorators.csrf import csrf_exempt
 
-
+@csrf_exempt
 def home(request):
    
     if 'city' in request.POST:
