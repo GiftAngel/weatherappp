@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-83@(ryv+r@)&w+f0&fy7@7$t4i(q-572-by*kkzau+3&%4j%wr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["https://weatherappp-production.up.railway.app/"]
+CSRF_TRUSTED_ORIGINS = ["https://weatherappp-production.up.railway.app/"]
+CSRF_ALLOWED_ORIGINS = ["https://weatherappp-production.up.railway.app/"]
+CORS_ORIGINS_WHITELIST = ["https://weatherappp-production.up.railway.app/"]
 
 
 # Application definition
@@ -53,15 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGIN = ['*']
 
-CORS_ALLOWED_METHOD = [
-    'GET',
-    'POST',
-    'DELETE',
-]
-
-CORS_ALLOWED_CREDENTIALS = True
 
 ROOT_URLCONF = 'weather.urls'
 
