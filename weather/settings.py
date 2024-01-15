@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-83@(ryv+r@)&w+f0&fy7@7$t4i(q-572-by*kkzau+3&%4j%wr
 DEBUG = True
 
 #ALLOWED_HOSTS = [*]
-ALLOWED_HOSTS = ['weatherappp-production.up.railway.app']
+ALLOWED_HOSTS = ['gift-weathers.onrender.com']
 
 
 
@@ -137,7 +137,7 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CSRF_TRUSTED_ORIGINS = ['weatherappp-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['gift-weathers.onrender.com']
 
 SESSION_COOKIE_SECURE = True
 
